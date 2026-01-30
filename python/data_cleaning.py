@@ -1,3 +1,6 @@
+# Cleaning missing values
+# Calculating monthly revenue
+
 import pandas as pd
 
 customers = pd.read_csv("../data/raw/customers.csv")
