@@ -1,10 +1,20 @@
-# Cleaning missing values
-# Calculating monthly revenue
+"""
+Project: E-Commerce Sales & Customer Analytics
+Purpose: Clean and prepare e-commerce data for analysis
+Author: Riya Makhani
+"""
 
 import pandas as pd
 
-customers = pd.read_csv("../data/raw/customers.csv")
-orders = pd.read_csv("../data/raw/orders.csv")
+# Load dataset
+orders = pd.read_csv("orders.csv")
 
-print(customers.head())
-print(orders.head())
+# Handle missing values
+orders.dropna(inplace=True)
+
+# Convert date columns
+orders['order_date'] = pd.to_datetime(orders['order_date'])
+
+# Save cleaned data
+orders.to_csv("cleaned_orders.csv", index=False)
+
