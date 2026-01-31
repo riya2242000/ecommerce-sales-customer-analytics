@@ -58,6 +58,15 @@ reports/ → insights summary
 - High CLV customers contribute significantly to long-term revenue
 
 ---
+---
+
+## Tableau Dashboard Preview
+
+The following dashboard was created using Tableau Public to visualize key sales and revenue trends.
+
+![E-Commerce Sales Dashboard](tableau/dashboard_screenshots/ecommerce_sales_dashboard.png)
+
+Tableau Public Link: https://public.tableau.com/app/profile/riya.makhani/viz/E-CommerceSalesDashboard_17698363998730/E-CommerceSalesOverview
 
 ## How to Use This Project
 1. Review SQL scripts to understand KPI calculations
