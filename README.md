@@ -69,7 +69,7 @@ The following dashboard was created using Tableau Public to visualize key sales 
 Tableau Public Link: https://public.tableau.com/app/profile/riya.makhani/viz/E-CommerceSalesDashboard_17698363998730/E-CommerceSalesOverview
 
 ## How to Use This Project
-1. Review SQL scripts to understand KPI calculations
+1. Review SQL scripts to understand KPI calculations. SQL queries were developed and executed using MySQL Workbench.
 2. Open Python notebooks for data cleaning and analysis
 3. Explore Tableau dashboards for visual insights
 4. Refer to the reports folder for summarized findings
