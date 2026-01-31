@@ -149,6 +149,22 @@ FROM (
 WHERE order_count > 1
 GROUP BY order_count;
 
+-- Monthly Revenue using CTE
+WITH monthly_revenue AS (
+    SELECT
+        DATE_TRUNC('month', o.order_purchase_timestamp) AS month,
+        SUM(p.payment_value) AS revenue
+    FROM orders o
+    JOIN payments p ON o.order_id = p.order_id
+    GROUP BY 1
+)
+SELECT
+    month,
+    revenue,
+    revenue - LAG(revenue) OVER (ORDER BY month) AS revenue_change
+FROM monthly_revenue;
+
+
 
 
 
